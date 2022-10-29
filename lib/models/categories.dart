@@ -1,1 +1,1 @@
-List<String> categories = ['Fruits', 'Vegetable', 'Eggs & Meat', 'Rice & Oils'];
+List<String> categories = ['Buah', 'Sayur', 'Daging', 'Biji-bijian'];

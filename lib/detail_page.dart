@@ -138,7 +138,7 @@ class _DetailPageState extends State<DetailPage> {
                           ),
                           const SizedBox(width: 5),
                           Text(
-                            '${widget.product.rate} (2K)',
+                            '${widget.product.rate} (1423)',
                             style: poppins.copyWith(
                               color: blue,
                               fontWeight: FontWeight.bold,
@@ -170,7 +170,7 @@ class _DetailPageState extends State<DetailPage> {
                           ),
                           const SizedBox(width: 5),
                           Text(
-                            'Fri 26.12',
+                            'Jum 26.12',
                             style: poppins.copyWith(
                               color: blue,
                               fontWeight: FontWeight.bold,
@@ -274,12 +274,12 @@ class _DetailPageState extends State<DetailPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Total Price',
+                            'Total Harga',
                             style: poppins.copyWith(
                                 fontSize: 14, color: blue.withOpacity(0.6)),
                           ),
                           Text(
-                              '\$${(widget.product.price * quantity).toStringAsFixed(2)}',
+                              '\Rp.${(widget.product.price * quantity).toStringAsFixed(2)}',
                               style: poppins.copyWith(
                                   fontSize: 20,
                                   color: blue,
@@ -296,7 +296,7 @@ class _DetailPageState extends State<DetailPage> {
                                 borderRadius: BorderRadius.circular(30),
                                 color: darkorange),
                             child: Text(
-                              'Add to Cart',
+                              'Tambahkan Ke Keranjang',
                               style: poppins.copyWith(
                                   fontSize: 16,
                                   color: white,

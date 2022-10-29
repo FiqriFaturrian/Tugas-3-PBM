@@ -12,10 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String currentCategory = 'Fruits';
+  String currentCategory = 'BUAH';
   int currentMenu = 0;
   List<Product> dataProduct =
-      products.where((element) => element.category == 'Fruits').toList();
+      products.where((element) => element.category == 'BUAH').toList();
   List<IconData> menus = [
     Icons.home_rounded,
     Icons.favorite_rounded,
@@ -41,13 +41,13 @@ class _HomePageState extends State<HomePage> {
               RichText(
                   text: TextSpan(children: [
                 TextSpan(
-                    text: 'GRO',
+                    text: 'BELI',
                     style: poppins.copyWith(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: darkorange)),
                 TextSpan(
-                    text: 'CERY',
+                    text: 'COY',
                     style: poppins.copyWith(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
                   });
                 },
                 decoration: InputDecoration(
-                    hintText: 'Search want to buy',
+                    hintText: 'Cari',
                     hintStyle: poppins.copyWith(fontSize: 14, color: blue),
                     prefixIcon: const Icon(
                       Icons.search_rounded,
@@ -198,7 +198,7 @@ class _HomePageState extends State<HomePage> {
                           color: darkorange,
                         ),
                         Text(
-                          'Product Empty',
+                          'Barang Kosong',
                           style:
                               poppins.copyWith(fontSize: 18, color: darkorange),
                         )
@@ -280,7 +280,7 @@ class ItemProduct extends StatelessWidget {
                   RichText(
                       text: TextSpan(children: [
                     TextSpan(
-                        text: '\$${product.price}',
+                        text: '\Rp.${product.price}',
                         style: poppins.copyWith(
                           color: orange,
                           fontWeight: FontWeight.bold,
